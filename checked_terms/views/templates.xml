@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="payment_sale_note_checked" inherit_id="website_sale.payment_sale_note">
+            <xpath expr="//input[@id='checkbox_tc']" position="attributes">
+               <attribute name="t-att-checked">checked_terms and 'checked' or None</attribute>
+               <attribute name="t-att-value">checked_terms and 1 or 0</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>

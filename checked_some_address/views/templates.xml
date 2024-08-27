@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="address_checked" inherit_id="website_sale.address">
+            <xpath expr="//input[@name='use_same']" position="attributes">
+               <attribute name="t-att-checked">checked_some_address and 'checked' or None</attribute>
+               <attribute name="t-att-value">checked_some_address and 1 or 0</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>
